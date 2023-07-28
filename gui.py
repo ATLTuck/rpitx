@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import filedialog
 import subprocess
+import os
+
+# Set the display environment variable for headless mode
+os.environ["DISPLAY"] = ":99"
 
 def transmit_file():
     file_path = filedialog.askopenfilename()
